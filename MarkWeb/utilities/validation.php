@@ -38,9 +38,9 @@ function validEmail($value = null){
     return(filter_var($value, FILTER_VALIDATE_EMAIL)) ? true : false;
 }
 
-// function validDate($value = null){
-//     return(date("d-m-Y", $value)) ? true : false;
-// }
+function validDate($value){
+    return (preg_match('/([12]\d{3}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01]))/',$value)) ? true : false;
+}
 
 
 
