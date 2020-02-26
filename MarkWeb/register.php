@@ -90,12 +90,12 @@ else{
     echo "\n$email is not a valid Email";
 }
 
-// if(validDate($date)){
-//     echo "\nValid Date";
-// }
-// else {
-//     echo "\nNot a valid date";
-// }
+if(validDate($date)){
+    echo "\nValid Date";
+}
+else {
+    echo "\nNot a valid date";
+}
 
 
 
