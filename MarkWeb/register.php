@@ -48,53 +48,53 @@ $email = $_POST['email'];
 
 if(isEmpty($firstname) && isEmpty($lastname) && isEmpty($middlename) && isEmpty($place) && isEmpty($guardian) && isEmpty($contact) && isEmpty($status) && isEmpty($schoolyear)
  && isCorrectLentgh($firstname) && isCorrectLentgh($lastname)){
-    echo "Inputs are good";
+    echo "Inputs are good, <br>";
 }
 else{
-    echo "Inputs are bad / Must be proper length";
+    echo "Inputs are bad / Must be proper length, <br>";
 }
 
 if(onlyNumbers($contact) && numberFormat($contact)){
-    echo "\nContact number and contact format is good";
+    echo "\nContact number and contact format is good, <br>";
 }
 else{
-    echo "\nContact number format is bad";
+    echo "\nContact number format is bad, <br>";
 }
 
 if(notStartWithNumber($firstname) && notStartWithNumber($lastname) && notStartWithNumber($middlename) && notStartWithNumber($guardian) && notStartWithNumber($status)  && notStartWithNumber($email)){
-    echo "\nGood kaayo!";
+    echo "\nGood kaayo!, <br>";
 }
 else{
-    echo "\nShould not start with a number";
+    echo "\nShould not start with a number, <br>";
 }
 
 if(notStartWithSpecialCharacter($firstname) && notStartWithSpecialCharacter($lastname) && notStartWithSpecialCharacter($middlename) && notStartWithSpecialCharacter($guardian) && notStartWithSpecialCharacter($status)){
-    echo "\nOKEEY KAAYO";
+    echo "\nOKEEY KAAYO, <br>";
 }
 else{
-    echo "\nNo DI PWEDE MAG START OG SPECIAL CHARACTER";
+    echo "\nNo DI PWEDE MAG START OG SPECIAL CHARACTER, <br>";
 }
 
 if (notStartWithHtmlTags($firstname) && notStartWithHtmlTags($lastname) && notStartWithHtmlTags($middlename) &&
 notStartWithHtmlTags($guardian) && notStartWithHtmlTags($contact) && notStartWithHtmlTags($status) && notStartWithHtmlTags($schoolyear) && notStartWithHtmlTags($email)){
-    echo "\nGOOD BCUZ NO HTMLTAGS";
+    echo "\nGOOD BCUZ NO HTMLTAGS, <br>";
 }
 else{
-    echo "\nSHOULD NOT BE START WITH HTML TAGS!";
+    echo "\nSHOULD NOT BE START WITH HTML TAGS!, <br>";
 }
 
 if(validEmail($email)){
-    echo "\n$email is a valid Email";
+    echo "\n$email is a valid Email, <br>";
 }
 else{
-    echo "\n$email is not a valid Email";
+    echo "\n$email is not a valid Email, <br>";
 }
 
 if(validDate($date)){
-    echo "\nValid Date";
+    echo "\nValid Date, <br>";
 }
 else {
-    echo "\nNot a valid date";
+    echo "\nNot a valid date, <br>";
 }
 
 
